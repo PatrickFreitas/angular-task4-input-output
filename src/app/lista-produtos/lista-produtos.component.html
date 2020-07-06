@@ -1,0 +1,6 @@
+<h2> Lista de produtos </h2>
+
+<p *ngFor="let produto of produtos"> 
+  {{produto.id}} - {{produto.nome}}
+  <button (click)="adicionarProduto(produto)"> Add </button>
+</p>

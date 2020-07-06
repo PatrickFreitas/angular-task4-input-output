@@ -1,0 +1,10 @@
+<h2> Carrinho de compras </h2>
+
+<p> número de itens no carrinho {{quantidade}} </p>
+
+<p *ngFor="let produto of produtos"> 
+  {{produto.id}} - {{produto.nome}}
+</p>
+
+
+<app-lista-produtos (produtoAdicionado)="onProdutoAdicionado($event)"> </app-lista-produtos>
